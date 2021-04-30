@@ -43,15 +43,15 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
 
 def save_data(df: pd.DataFrame, database_filename: str) -> None:
     """Export the result to a sqlite db
-    Args:
+    input:
         df: a cleaned df
         database_filename: the file path of db
 
-    Returns:
+    output:
         None
     """
     engine = create_engine('sqlite:///'+database_filename)
-    df.to_sql('messages', engine, index=False, if_exists='replace')
+    df.to_sql('message_table', engine, index=False, if_exists='replace')
     engine.dispose()
 
 def main():
