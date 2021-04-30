@@ -1,0 +1,5 @@
+nltk==3.6.2
+sklearn==0.0
+joblib==1.0.1
+pandas==1.2.4
+sqlalchemy==1.4.9
