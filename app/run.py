@@ -52,7 +52,7 @@ def index():
     category = dfc['cname']
     category_counts = dfc['count']
 
-
+    # get message length distribution
     lengths = df.message.str.split().str.len()
     len_counts, len_div = np.histogram(
         lengths,
