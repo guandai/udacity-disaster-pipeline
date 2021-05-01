@@ -19,6 +19,7 @@ def load_data(messages_filepath: str, categories_filepath: str) ->  pd.DataFrame
 
 def clean_data(df: pd.DataFrame) -> pd.DataFrame:
     '''
+    clean_data
     input:
         df: The combined dataset of messages and categories.
     output:
@@ -42,7 +43,8 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 def save_data(df: pd.DataFrame, database_filename: str) -> None:
-    """Export the result to a sqlite db
+    """
+    export the result to a db
     input:
         df: a cleaned df
         database_filename: the file path of db
