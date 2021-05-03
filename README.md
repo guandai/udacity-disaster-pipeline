@@ -39,8 +39,12 @@ Below are a few screenshots of the web app.
 |- train_classifier.py
 |- disaster_model.pkl  # saved model
 
+- assets
+|- message_length.png
+|- distribution_of_categories.png
+|- overview.png
+
 - README.md
-- *.png
 ```
 
 the main logic of BI work is in process_data.py and train_classifier.py
@@ -73,7 +77,9 @@ and here is a list of workflow:
 
 3. Go to http://0.0.0.0:3001/
 
-<img src="overview.png" width="80%" alt="disaster response project web app overview">
+<img src="assets/overview.png" width="80%" alt="disaster response project web app overview">
+<img src="assets/message_length.png" width="80%" alt="distribution of message length">
+<img src="assets/distribution_of_categories.png" width="80%" alt="distribution of categories">
 
 
 ## Acknowledgements
